@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: 'Baloo Bahina 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('gym1.jpg');
+        /* background-size : cover; */
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .left img {
+        height : 60px;
+        width: 45px;
+    }
+    .left div {
+        font-size: 15px;
+        text-align: center;
+    }
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 34px;
+        display: inline-block;
+    }
+    .btn {
+        font-family: 'Baloo Bahina 2', cursive;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-size: 18pt;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color:black;
+        cursor: pointer;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    } 
+    .navbar li {
+        list-style: none;
+    }
+    .navbar li a{
+        border-radius: 23px;
+        font-size: 18pt;
+        padding : 15px;
+        margin : 30px 20px;
+        color:black;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        background-color: black;
+        color:white;
+    }
+
+    .container {
+        margin : auto;
+        border: 5px solid white;
+        border-radius: 10px;
+        padding: 15px 92px;
+        width: 40%; 
+        text-align: center;
+        height: 394px;
+    }
+    .form-group input {
+        font-family: 'Baloo Bahina 2', cursive;
+        font-size: 30px;
+        color: black;
+        border-radius: 10px;
+        text-align: center;
+        margin: 10px;
+    }
+    .container {
+        margin : 150px auto;
+        height: 450px;
+
+    }
+    .container button {
+        margin : 10px;
+        width: 70%;
+    }
+
+
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="logo.png">
+            <div>
+                <p style = "color:black">GYM</p>
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home </a></li>
+                <li><a href = "aboutus.html" target="_blank"> About Us</a></li>
+                <li><a href="bmicalculator.html" target="_blank"> Calculate BMI</a></li>
+                <li><a href="timetable.html" target="_blank"> Time Table</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button onclick = "function1()" class="btn">Call Us</button>
+            <button onclick = "function2()" class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Join Gym
+        </h1>
+        <form action="backend.php" target = "_blank">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Mobile Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <button onclick = "function3()" class="btn">Submit </button>
+        </form>
+    </div>
+    <script>
+        function function1() {
+            alert('Call Us on 9876543210');
+        }
+        function function2() {
+            alert('Email Us on gymandfitness@gmail.com');
+        }
+        function function3() {
+            alert('Press OK to submit');
+        }
+    </script>
+</body>
+
+</html>
